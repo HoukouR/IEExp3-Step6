@@ -1,10 +1,9 @@
 package ieexp3.id190441148.ieexp3_step6;
 
 /**
- * サンプルTCPクライアントコールバックインタフェース（Sample5用）
+ * TCPクライアントコールバックインタフェース
  *
- * @author Hidekazu Suzuki
- * @version 1.2 - 2019/05/22
+ * @author Riku Hinata
  */
 public interface CommunicationTask6Callback {
     /**
