@@ -93,7 +93,7 @@ public class BasicTask6Activity extends AppCompatActivity implements Communicati
         // ボタンの有効/無効を設定
         buttonConnect.setEnabled(true);
         buttonDisconnect.setEnabled(false);
-        //buttonSet.setEnabled(false);
+        buttonSet.setEnabled(false);
         buttonRun.setEnabled(false);
 
         //editLogを編集不可に設定
