@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicTask6Activity">
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="858dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="handleButtonClear"
+        android:text="@string/button_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLog" />
+
+    <EditText
+        android:id="@+id/editLog"
+        android:layout_width="406dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="570dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:maxLines="9"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLog" />
+
+    <TextView
+        android:id="@+id/textLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="570dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="430dp"
+        android:text="@string/log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConnect" />
+
+    <TextView
+        android:id="@+id/indexBallPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/ballPosition"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdHole" />
+
+    <EditText
+        android:id="@+id/indexPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/indexBallPosition"
+        app:layout_constraintTop_toBottomOf="@+id/indexBallPosition" />
+
+    <ImageView
+        android:id="@+id/sixthHoleView"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondHole"
+        app:layout_constraintEnd_toEndOf="@+id/thirdHoleView"
+        app:layout_constraintStart_toStartOf="@+id/thirdHoleView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/sixthHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="13dp"
+        android:text="@string/sixth"
+        app:layout_constraintEnd_toEndOf="@+id/sixthHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/sixthHoleView" />
+
+    <ImageView
+        android:id="@+id/fifthHoleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fourthHoleView"
+        app:layout_constraintEnd_toEndOf="@+id/secondHoleView"
+        app:layout_constraintStart_toStartOf="@+id/secondHoleView"
+        app:layout_constraintTop_toTopOf="@+id/fourthHoleView"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/fifthHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/fifth"
+        app:layout_constraintStart_toStartOf="@+id/fifthHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/fifthHoleView" />
+
+    <ImageView
+        android:id="@+id/fourthHoleView"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="127dp"
+        app:layout_constraintBottom_toBottomOf="@+id/secondHoleView"
+        app:layout_constraintEnd_toEndOf="@+id/firstHoleView"
+        app:layout_constraintStart_toStartOf="@+id/firstHoleView"
+        app:layout_constraintTop_toTopOf="@+id/textPort"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/fourthHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/fourth"
+        app:layout_constraintEnd_toEndOf="@+id/fourthHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/fourthHoleView" />
+
+    <ImageView
+        android:id="@+id/thirdHoleView"
+        android:layout_width="83dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/thirdHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/third"
+        app:layout_constraintStart_toStartOf="@+id/thirdHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/thirdHoleView" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/ip_address"
+        app:layout_constraintBottom_toTopOf="@+id/editAddress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonConnect"
+        app:layout_constraintStart_toStartOf="@+id/textAddress"
+        app:layout_constraintTop_toTopOf="@+id/editPort" />
+
+    <TextView
+        android:id="@+id/textPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/port_number"
+        app:layout_constraintStart_toEndOf="@+id/editAddress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textPort"
+        app:layout_constraintTop_toBottomOf="@+id/textPort" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="47dp"
+        android:onClick="handleButtonConnect"
+        android:text="@string/button_connect"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonDisconnect"
+        app:layout_constraintEnd_toEndOf="@+id/ballView"
+        app:layout_constraintStart_toEndOf="@+id/editPort" />
+
+    <Button
+        android:id="@+id/buttonDisconnect"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="51dp"
+        android:onClick="handleButtonDisconnect"
+        android:text="@string/button_disconnect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonConnect"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Your package name + class name  -->
+
+    <Button
+        android:id="@+id/buttonRun"
+        android:layout_width="176dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="474dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="handleButtonRun"
+        android:text="@string/button_run"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonSet"
+        android:layout_width="176dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="473dp"
+        android:layout_marginBottom="76dp"
+        android:onClick="handleButtonSet"
+        android:text="@string/button_set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/indexPosition"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/secondHoleView"
+        android:layout_width="83dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/indexPosition"
+        app:layout_constraintEnd_toEndOf="@+id/textPort"
+        app:layout_constraintStart_toStartOf="@+id/thirdHole"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <ImageView
+        android:id="@+id/firstHoleView"
+        android:layout_width="83dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/checkbox_off_background" />
+
+    <TextView
+        android:id="@+id/firstHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/first"
+        app:layout_constraintEnd_toEndOf="@+id/firstHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/firstHoleView" />
+
+    <TextView
+        android:id="@+id/secondHole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/second"
+        app:layout_constraintEnd_toEndOf="@+id/secondHoleView"
+        app:layout_constraintTop_toBottomOf="@+id/secondHoleView" />
+
+    <ieexp3.id190441148.ieexp3_step6.CustomImageView
+        android:id="@+id/ballView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdHole"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editPort"
+        app:srcCompat="@android:drawable/presence_online" />
+
+    <Switch
+        android:id="@+id/debugSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/debug_switch"
+        app:layout_constraintEnd_toStartOf="@+id/buttonClear"
+        app:layout_constraintTop_toBottomOf="@+id/editLog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
